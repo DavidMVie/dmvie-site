@@ -1,0 +1,47 @@
+.sect.project-page h1 {
+  margin-bottom: 20px;
+}
+
+.sect.project-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-code-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.fas.fa-check-square {
+  color: rgb(109, 199, 109)
+}
+
+.fa-ul li {
+  padding: 5px;
+  text-align: left;
+}
+
+hr.sect-line {
+  height: .5px;
+  border: none;
+  background: rgb(199, 199, 199);
+  width: 50%;
+  margin: 15px auto 0;
+   
+ }
+
+ /* DEFAULT H2 TAG ICONS */
+.project-page h2 i.fas,
+.project-page h2 h1 i.fas {
+  color: rgba(151, 16, 16, 0.07);
+  margin-left: 15px;
+  font-size: 4em;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+
+
+

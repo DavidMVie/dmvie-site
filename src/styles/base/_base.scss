@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica;
+
+}
+
+#root {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  margin: $xs-size 0; 
+  padding: 0;
+  color: $off-black;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: $xl-size;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: $ml-size
+}
+
+h4 {
+  font-size: $m-size
+}
+
+
+p, li, a, span, div, input, textarea {
+  font-size: $ml-size;
+  color: $light-grey;
+  line-height: 1.2;
+}
+
+header h1 {
+  color: white;
+}
+
+/* Allows abslute positioning for font icons in headers where they are included. -- see build tools / site features for example. */
+h2.contains-icon,
+h1.contains-icon{
+  position: relative
+}
+
+header, footer {
+  background: $dark-blue;
+}
+
+header p, footer p{  
+  color: white;
+}
+
+.main-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-content {
+  flex-grow: 1;
+  background: rgb(247, 246, 245);
+}
+
+section {
+  background: white;
+}
+
+div.center-wrapper {
+  text-align: center;
+  padding: $l-size;
+}
+
+
+// Standard Section
+section.sect {
+  margin-top: 40px;
+  padding: $l-size;
+  text-align: center;
+}
+
+
+
+/* BUTTONS */
+
+.button {
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background .5s ease;
+  cursor: pointer;
+  font-size: $m-size;
+  outline: none;
+  border: none;
+  font-family: 'Open Sans', Arial;
+  padding: $xs-size
+}
+
+.button--btn1 {
+  background: $button-pink;
+  color: white;
+}
+
+.button--btn1:hover {
+  background: darken($button-pink, 10%)
+}
+
+.button--btn1:active  {
+  box-shadow: inset 0px 0px 6px 1px rgba(0,0,0, .8)
+}
+
+.button.button--disabled {
+  background: rgb(190, 190, 190);
+  color: rgb(151, 151, 151);
+  cursor: auto;
+  text-decoration: line-through;
+}
+
+
+/* Select Dropdowns */
+  /* svg image for custom select button */
+  .select-css {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.4;
+    padding: .6em 1.4em .5em .8em;
+    margin: 10px;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #A5035C 0%,#6C0630 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+  }
+
+  .select-css::-ms-expand {
+    display: none;
+  }
+
+  .select-css:hover {
+    border-color: #888;
+  }
+
+  .select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 1px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 1px -moz-mac-focusring;
+    color: rgba(59, 153, 252, 1);
+    outline: none;
+  }
+  .select-css option {
+    font-weight:normal;
+  }
+
